@@ -1,30 +1,19 @@
 
 <template>
   <div>
-    <h1>Jamy memes</h1>
-  </div>
-  <div id="carouselExample" class="carousel slide">
-
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./assets/jamy2.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/jamy.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/jamty3.png" class="d-block w-100" alt="...">
+    <div class="container-navbar">
+      <span class="logo">J & J</span>
+      <div class="nav-bar">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">CERIMÔNIA</a></li>
+          <li><a href="">LISTA DE PRESENTES</a></li>
+          <li><a href="">CONFIRME SUA PRESENÇA</a></li>
+        </ul>
+      </div>
+     
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
 </template>
 
@@ -56,6 +45,50 @@ export default{
 
 
 
-<style scoped>
+<style lang="scss" scoped>
 
+.nav-bar{
+ // background-color: red;
+ //width: 50%; 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  ul{
+   // background-color: #dddddd;
+  }
+  li{
+    display: inline;
+    float: left;
+    margin-right: 20px;
+    
+  }
+  a{
+    display: block;
+    padding: 8px;
+    //background-color: #dddddd;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+  }
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 </style>
