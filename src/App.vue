@@ -1,43 +1,47 @@
-
 <template>
   <div>
-    <div class="container-navbar">
-      <span class="logo">J & J</span>
-      <div class="nav-bar">
-        <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">CERIMÔNIA</a></li>
-          <li><a href="">LISTA DE PRESENTES</a></li>
-          <li><a href="">CONFIRME SUA PRESENÇA</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md bg-dark " data-bs-theme="dark">
+      <div class="container-fluid main-nav">
+        <a class="navbar-brand" href="#">J & J</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse buttons-nav" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">HOME</a>
+            <a class="nav-link" href="#">CERIMÔNIA</a>
+            <a class="nav-link" href="#">LISTA DE PRESENTES</a>
+            <a class="nav-link" href="#">CONFIRME SUA PRESENCA</a>
+          </div>
+        </div>
       </div>
-     
-    </div>
+    </nav>
   </div>
 
 </template>
 
-<script >
+<script>
 
-export default{
-  data:function(){
+export default {
+  data: function () {
     return {
       code: '',
     }
   },
 
-  computed:{
+  computed: {
 
   },
 
-  methods:{
-    teste(){
+  methods: {
+    teste() {
       alert('funciona')
     }
 
   },
 
-  mounted(){
+  mounted() {
 
   }
 }
@@ -47,48 +51,22 @@ export default{
 
 <style lang="scss" scoped>
 
-.nav-bar{
- // background-color: red;
- //width: 50%; 
- display: flex;
- align-items: center;
- justify-content: center;
-  ul{
-   // background-color: #dddddd;
-  }
-  li{
-    display: inline;
-    float: left;
-    margin-right: 20px;
-    
-  }
+.buttons-nav{
+ 
   a{
-    display: block;
-    padding: 8px;
-    //background-color: #dddddd;
-    text-decoration: none;
-    color: black;
+    color:rgb(219, 219, 219);
+
   }
   a:hover{
     color: white;
-    background-color: black;
-    text-transform: uppercase;
   }
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
-.logo{
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-}
+.main-nav{
 
-.container-navbar{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
 }
 </style>
