@@ -1,13 +1,13 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-md bg-dark " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top my-container" data-bs-theme="dark">
       <div class="container-fluid main-nav">
-        <a class="navbar-brand" href="#">J & J</a>
+        <span class="navbar-brand">J & J</span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse buttons-nav" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse buttons-nav justify-content-center" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link" aria-current="page" href="#">HOME</a>
             <a class="nav-link" href="#">CERIMÔNIA</a>
@@ -52,21 +52,33 @@ export default {
 <style lang="scss" scoped>
 
 .buttons-nav{
- 
+  
   a{
-    color:rgb(219, 219, 219);
+    color:#fff;
+    
 
   }
   a:hover{
-    color: white;
+    color: black;
   }
 }
 
-.main-nav{
+.my-container{
+  background-color: #91A8D2 !important;
+  padding-right: 20px;
+  letter-spacing: 4px;
+  box-shadow: 0px 1px 0px;
+}
 
+.main-nav{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navbar-brand{
+  color: black;
+  font-weight: bold;
   
 }
 </style>
