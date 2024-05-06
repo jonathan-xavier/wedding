@@ -1,4 +1,6 @@
 <template>
+
+  <!-- navbar -->
   <div>
     <nav class="navbar navbar-expand-lg bg-dark fixed-top my-container" data-bs-theme="dark">
       <div class="container-fluid main-nav">
@@ -17,6 +19,18 @@
         </div>
       </div>
     </nav>
+  </div>
+
+  <!-- fim navbar -->
+
+
+  <!-- inicio head -->
+  <div class="my-main">
+    <img src="./assets/we.jpg" alt="">
+    <div >
+
+    </div>
+    <vr class="line" style="color: black; width: 78px; height: 10px; background-color: black;"/>
   </div>
 
 </template>
@@ -50,35 +64,58 @@ export default {
 
 
 <style lang="scss" scoped>
+.buttons-nav {
 
-.buttons-nav{
-  
-  a{
-    color:#fff;
-    
+  a {
+    color: #fff;
+    /* color: black; */
 
   }
-  a:hover{
+
+  a:hover {
     color: black;
   }
 }
 
-.my-container{
+.my-container {
   background-color: #91A8D2 !important;
   padding-right: 20px;
   letter-spacing: 4px;
   box-shadow: 0px 1px 0px;
 }
 
-.main-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar-brand{
+.navbar-brand {
   color: black;
   font-weight: bold;
-  
+
+}
+
+.my-main {
+  /* background-color: red !important; */
+  margin-top: 57px;
+  height: 800px;
+  display: flex;
+  border-bottom: 1px solid black;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #60708C ; */
+  img{
+    margin-top: 30px;
+    border-radius: 10px 10px 10px 10px;
+    height: 700px;
+  }
+
+}
+
+.line{
+  position: relative;
+  background-color: black;
 }
 </style>
