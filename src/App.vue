@@ -23,11 +23,9 @@
 
   <!-- fim navbar -->
 
-
   <!-- inicio head -->
   <div class="my-main">
     <img src="./assets/we.jpg" alt="">
-    <!-- <div class="line"></div> -->
     
     <div class="title">
       <p> <i>salve a data</i></p>
@@ -121,15 +119,6 @@ export default {
     padding: 0 25px 0 0;
   }
 
-}
-
-.line{
-  position: relative;
-  right: -15px;
-  top: -219px;
-  width: 3px;
-  height: 230px;
-  background-color: #91A8D2;
 }
 
 .title{
