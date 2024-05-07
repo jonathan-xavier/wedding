@@ -27,10 +27,19 @@
   <!-- inicio head -->
   <div class="my-main">
     <img src="./assets/we.jpg" alt="">
-    <div >
-
+    <!-- <div class="line"></div> -->
+    
+    <div class="title">
+      <p> <i>salve a data</i></p>
+      <span>
+        Jonathan <br> e <br> 
+        Jamilly
+      </span>
+      <br>
+      <br>
+      <span class="date">20/07/2024</span>
     </div>
-    <vr class="line" style="color: black; width: 78px; height: 10px; background-color: black;"/>
+    
   </div>
 
 </template>
@@ -68,8 +77,6 @@ export default {
 
   a {
     color: #fff;
-    /* color: black; */
-
   }
 
   a:hover {
@@ -78,7 +85,7 @@ export default {
 }
 
 .my-container {
-  background-color: #91A8D2 !important;
+  background-color: #5383E8 !important;
   padding-right: 20px;
   letter-spacing: 4px;
   box-shadow: 0px 1px 0px;
@@ -97,25 +104,59 @@ export default {
 }
 
 .my-main {
-  /* background-color: red !important; */
+  
   margin-top: 57px;
   height: 800px;
   display: flex;
   border-bottom: 1px solid black;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  gap: 10px;
   align-items: center;
-  /* background-color: #60708C ; */
   img{
+    border-right:  2px solid #5383E8;
     margin-top: 30px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 1px 0px 10px;
     height: 700px;
+    padding: 0 25px 0 0;
   }
 
 }
 
 .line{
   position: relative;
-  background-color: black;
+  right: -15px;
+  top: -219px;
+  width: 3px;
+  height: 230px;
+  background-color: #91A8D2;
+}
+
+.title{
+  padding-left: 10px;
+  span {    
+    color: #596163;
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+  }
+  p{
+    color: #596163;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+  }
+
+}
+
+.date{
+  font-size: 2.3rem !important;
+  color: white !important;
+  padding: 3px 12px;
+  border-radius: 5px;
+  background-color: #37579A;
+
 }
 </style>
